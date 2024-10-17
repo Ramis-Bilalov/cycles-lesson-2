@@ -40,11 +40,12 @@ public class Main {
         System.out.println("\n\nЗадача 3.");
 
         int population = 12_000_000;
-        int mortality = population * 8 / 1000;
-        int birthRate = population * 17 / 1000;
+
         int years = 0;
 
         while (years < 10) {
+            int mortality = population * 8 / 1000;
+            int birthRate = population * 17 / 1000;
             years++;
             population = population - mortality + birthRate;
             System.out.println(years + "-ой(ый) год население страны: " + population);
